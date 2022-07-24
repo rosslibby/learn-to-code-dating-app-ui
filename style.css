@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  background-color: #0f1827;
+}
+
+/**
+ * Container
+ */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/**
+ * App wrapper
+ */
+
+.app-wrapper {
+  width: 360px;
+  height: 640px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/**
+ * Prospects container
+ */
+
+.prospects {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.prospects h1 {
+  font-family: system-ui;
+  font-weight: 600;
+}
+
+.prospects p {
+  font-family: system-ui;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+/**
+ * Prospect
+ */
+
+.prospect {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+}
+
+.prospect--current {
+  z-index: 1;
+}
+
+.prospect--passed, .prospect--liked {
+  z-index: 2;
+}
+
+/**
+ * John Summit (prospect)
+ */
+
+.prospect--john-summit {
+  background-image: url(https://djlifemag.com/wp-content/uploads/2022/03/john-summit-la-danza-dj-life.jpg);
+}
+
+/**
+ * Lucii (prospect)
+ */
+
+.prospect--lucii {
+  background-image: url(https://i1.sndcdn.com/avatars-C6lJGR2vQlXYusE3-Nvd02Q-t500x500.jpg);
+}
+
+/**
+ * Feedback
+ */
+
+.feedback {
+  display: none;
+  text-align: center;
+  font-size: 120px;
+}
+
+.prospect--passed .feedback--passed {
+  display: block;
+}
+
+.prospect--liked .feedback--liked {
+  display: block;
+}
+
+/**
+ * Buttons container
+ */
+
+.buttons {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/**
+ * Button
+ */
+
+.button {
+  font-family: system-ui;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 20px;
+  margin: 0 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+/**
+ * "Pass" button
+ */
+
+.button--pass {
+  border-color: #ff003b;
+  color: #ff003b;
+}
+
+.button--pass:hover {
+  background-color: #ff003b;
+  color: #980225;
+}
+
+/**
+ * "Like" button
+ */
+
+.button--like {
+  border-color: #00ff95;
+  color: #00ff95;
+}
+
+.button--like:hover {
+  background-color: #00ff95;
+  color: #007645;
+}
