@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Dating App Lesson (2)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- Positions the app -->
+    <div class="container">
+
+      <!-- Gives form to the app -->
+      <div class="app-wrapper">
+
+        <!-- List of the dating prospects -->
+        <div class="prospects">
+
+          <!-- Empty prospects message -->
+          <h1>No more prospects</h1>
+          <p><em>(Maybe you should try to be less judgemental)</em></p>
+
+          <!-- Prospect #1 -->
+          <div class="prospect prospect--john-summit prospect--current">
+
+            <!-- "Passed" icon -->
+            <h1 class="feedback feedback--passed">❌</h1>
+
+            <!-- "Liked" icon -->
+            <h1 class="feedback feedback--liked">🌹</h1>
+          </div>
+
+          <!-- Prospect #2 -->
+          <div class="prospect prospect--lucii">
+
+            <!-- "Passed" icon -->
+            <h1 class="feedback feedback--passed">❌</h1>
+
+            <!-- "Liked" icon -->
+            <h1 class="feedback feedback--liked">🌹</h1>
+          </div>
+        </div>
+
+        <!-- Action buttons for liking/passing on prospects -->
+        <div class="buttons">
+
+          <!-- "Pass" button -->
+          <button class="button button--pass">Pass</button>
+
+          <!-- "Like" button -->
+          <button class="button button--like">Like</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+  </body>
+</html>
